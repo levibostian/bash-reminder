@@ -1,6 +1,6 @@
 {
   "name": "bash-reminder",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Display a message in terminal to yourself. Great for reminding yourself to do something.\"",
   "preferGlobal": true,
   "bin": {
