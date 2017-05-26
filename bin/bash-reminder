@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+var program = require('commander')
+var chalk = require('chalk')
+
+program
+  .version(require('../package').version)
+  .usage('reminder "Remind me to do something."')
+  .command('reminder', 'text of the reminder you want to create')
+
+
+program.on('--help', function () {
+  console.log('Example: bash-reminder "Do this"')
+})
+
+function help() {
+  program.parse(process.argv)
+  if (program.args.length < 1) return program.help()
+}
+help()
+
+var colors = [chalk.red, chalk.green, chalk.yellow, chalk.blue, chalk.magenta, chalk.cyan, chalk.white, chalk.gray]
+var chalkColor = colors[Math.floor(Math.random() * colors.length)]
+
+console.log(chalkColor(program.args[0]))

@@ -1,0 +1,20 @@
+{
+  "name": "bash-reminder",
+  "version": "0.1.0",
+  "description": "Display a message in terminal to yourself. Great for reminding yourself to do something.\"",
+  "preferGlobal": true,
+  "bin": {
+    "bash-reminder": "bin/bash-reminder"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "url": "git@github.com:levibostian/bash-reminder.git",
+    "type": "git"
+  },
+  "author": "Levi Bostian <levi.bostian@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0"
+  }
+}
